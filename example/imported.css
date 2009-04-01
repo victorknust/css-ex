@@ -1,0 +1,7 @@
+@CHARSET "UTF-8";
+
+$maincolor: green;
+
+body {
+    background-color: $maincolor;
+}

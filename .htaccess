@@ -1,0 +1,3 @@
+RewriteEngine On
+
+RewriteRule ^(.*\.css)$ /css_parser.php?path=$1 [L]

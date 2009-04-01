@@ -1,0 +1,36 @@
+@CHARSET "UTF-8";
+
+@import 'imported.css';
+
+$maincolor: #ddd;
+$detailcolor: #333;
+$standardpadding: 40px;
+	
+body {
+    background-color: $maincolor;
+    color: $detailcolor;
+    font-family: 'Verdana';
+    padding: $standardpadding;
+}
+
+p {
+    border: $detailcolor 1px solid;
+    padding: $standardpadding;
+    $roundedcorners(30);
+}
+
+pre {
+    padding: $standardpadding;
+    margin: 10px;
+    background-color: $detailcolor;
+    color: $maincolor;
+    $roundedcorners(5);
+}
+
+h1 {
+    $imagereplace('./imageheader.png');
+}
+
+
+
+

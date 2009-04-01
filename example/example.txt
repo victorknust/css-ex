@@ -1,0 +1,33 @@
+@CHARSET "UTF-8";
+
+$maincolor: #ddd;
+$detailcolor: #333;
+$standardpadding: 40px;
+$imagereplace: foobar;
+    
+body {
+    background-color: $maincolor;
+    color: $detailcolor;
+    font-family: 'Verdana';
+    padding: $standardpadding;
+}
+
+p {
+    border: $detailcolor 1px solid;
+    padding: $standardpadding;
+}
+
+pre {
+    padding: $standardpadding;
+    margin: 10px;
+    background-color: $detailcolor;
+    color: $maincolor;
+}
+
+h1 {
+    $imagereplace('./imageheader.png');
+    $roundedcorners(5);
+}
+
+
+

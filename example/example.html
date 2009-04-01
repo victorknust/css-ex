@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="./example.css">
+<title>CSS Variables Example</title>
+</head>
+<body>
+
+<h1>CSS Variables</h1>
+
+<p>This is an example page to demonstrate how CSS variables work. If you
+view the source for this page, you can see that a stylsheet is included as normal, 
+as below:
+</p>
+
+<pre>&lt;link rel="stylesheet" href="./example.css"&gt;</pre>
+
+<p>You can view this stylsheet <a href="./example.css">here</a>. Notice that
+it looks identical to any other. However, it was written using CSS variables.
+CSEx takes CSS that uses variables, and creates CSS 2.1 compliant stylsheets 
+that can be handled as normal. You can view the original CSS source 
+<a href="./example.txt">here</a>.</p>
+
+<p>The aim of CSS variables is not to introduce logic to CSS. CSS is used to style
+documents, and I believe it should stay true to that purpose. However, this 
+*does* aim to speed up development time when working with CSS, as well as making
+changes to styles easy. It also includes functions for common tasks such as 
+rounding corners, and replacing headers with images.</p>
+
+<h2>Caveats</h2>
+
+<ul>
+    <li>Variables are scoped to one stylsheet each. @import will not override
+    variables, neither will link</li>
+</ul>
+
+</body>
+</html>
